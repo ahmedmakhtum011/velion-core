@@ -1,0 +1,249 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "physics_dynamics_suite",
+        "label": "Physics Dynamics Suite",
+        "nodes": [
+          "readme_rigid_body_dynamics",
+          "readme_soft_body_dynamics",
+          "readme_fluid_body_dynamics"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "confidence_score": 0.9,
+        "source_file": "README.md"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "initial.cpp",
+      "file_type": "code",
+      "source_file": "initial.cpp",
+      "source_location": "L1",
+      "id": "initial_cpp",
+      "community": 1,
+      "norm_label": "initial.cpp"
+    },
+    {
+      "label": "arr_input()",
+      "file_type": "code",
+      "source_file": "initial.cpp",
+      "source_location": "L4",
+      "id": "velion_core_initial_arr_input",
+      "community": 1,
+      "norm_label": "arr_input()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "initial.cpp",
+      "source_location": "L15",
+      "id": "velion_core_initial_main",
+      "community": 1,
+      "norm_label": "main()"
+    },
+    {
+      "label": "initial.cpp",
+      "file_type": "code",
+      "source_file": "/mnt/c/Users/ahmed/OneDrive/Desktop/MAARG/velion-core/initial.cpp",
+      "source_location": "L1",
+      "id": "mnt_c_users_ahmed_onedrive_desktop_maarg_velion_core_initial_cpp",
+      "community": 1,
+      "norm_label": "initial.cpp"
+    },
+    {
+      "label": "Veilion-core",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_veilion_core",
+      "community": 0,
+      "norm_label": "veilion-core"
+    },
+    {
+      "label": "Hybrid AI accelerated physics simulation engine",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_hybrid_ai_physics_engine",
+      "community": 0,
+      "norm_label": "hybrid ai accelerated physics simulation engine"
+    },
+    {
+      "label": "Rigid body dynamics",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_rigid_body_dynamics",
+      "community": 0,
+      "norm_label": "rigid body dynamics"
+    },
+    {
+      "label": "Soft body dynamics",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_soft_body_dynamics",
+      "community": 0,
+      "norm_label": "soft body dynamics"
+    },
+    {
+      "label": "Fluid body dynamics",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_fluid_body_dynamics",
+      "community": 0,
+      "norm_label": "fluid body dynamics"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "initial.cpp",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_src": "initial_cpp",
+      "_tgt": "velion_core_initial_arr_input",
+      "source": "initial_cpp",
+      "target": "velion_core_initial_arr_input",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "initial.cpp",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_src": "initial_cpp",
+      "_tgt": "velion_core_initial_main",
+      "source": "initial_cpp",
+      "target": "velion_core_initial_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/mnt/c/Users/ahmed/OneDrive/Desktop/MAARG/velion-core/initial.cpp",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_src": "velion_core_initial_main",
+      "_tgt": "velion_core_initial_arr_input",
+      "source": "velion_core_initial_arr_input",
+      "target": "velion_core_initial_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/mnt/c/Users/ahmed/OneDrive/Desktop/MAARG/velion-core/initial.cpp",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_src": "mnt_c_users_ahmed_onedrive_desktop_maarg_velion_core_initial_cpp",
+      "_tgt": "velion_core_initial_arr_input",
+      "source": "velion_core_initial_arr_input",
+      "target": "mnt_c_users_ahmed_onedrive_desktop_maarg_velion_core_initial_cpp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/mnt/c/Users/ahmed/OneDrive/Desktop/MAARG/velion-core/initial.cpp",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_src": "mnt_c_users_ahmed_onedrive_desktop_maarg_velion_core_initial_cpp",
+      "_tgt": "velion_core_initial_main",
+      "source": "velion_core_initial_main",
+      "target": "mnt_c_users_ahmed_onedrive_desktop_maarg_velion_core_initial_cpp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "readme_veilion_core",
+      "_tgt": "readme_hybrid_ai_physics_engine",
+      "source": "readme_veilion_core",
+      "target": "readme_hybrid_ai_physics_engine"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "readme_hybrid_ai_physics_engine",
+      "_tgt": "readme_rigid_body_dynamics",
+      "source": "readme_hybrid_ai_physics_engine",
+      "target": "readme_rigid_body_dynamics"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "readme_hybrid_ai_physics_engine",
+      "_tgt": "readme_soft_body_dynamics",
+      "source": "readme_hybrid_ai_physics_engine",
+      "target": "readme_soft_body_dynamics"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "readme_hybrid_ai_physics_engine",
+      "_tgt": "readme_fluid_body_dynamics",
+      "source": "readme_hybrid_ai_physics_engine",
+      "target": "readme_fluid_body_dynamics"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "physics_dynamics_suite",
+      "label": "Physics Dynamics Suite",
+      "nodes": [
+        "readme_rigid_body_dynamics",
+        "readme_soft_body_dynamics",
+        "readme_fluid_body_dynamics"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "README.md"
+    }
+  ]
+}
